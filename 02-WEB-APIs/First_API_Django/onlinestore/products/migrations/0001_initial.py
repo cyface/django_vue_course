@@ -5,7 +5,6 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -31,7 +30,8 @@ class Migration(migrations.Migration):
                 ('price', models.FloatField()),
                 ('shipping_cost', models.FloatField()),
                 ('quantity', models.PositiveSmallIntegerField()),
-                ('manufacturer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='products', to='products.Manufacturer')),
+                ('manufacturer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='products',
+                                                   to='products.Manufacturer')),
             ],
         ),
     ]

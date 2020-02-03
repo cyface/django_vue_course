@@ -1,5 +1,6 @@
 import requests
 
+
 def main():
     response = requests.get("http://www.google.com")
     # response = requests.get("http://www.google.com/random-address/")
